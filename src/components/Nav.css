@@ -1,0 +1,217 @@
+/* barra de navegacion icono de redes sociales */
+.top-bar {
+    width: 100%;
+    background-color: #161616;
+    display: flex;
+    padding: 10px 35px 10px 0;
+    text-align: end;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    color: #fff;
+}
+.icon-nav {
+    background-color: #756f6f86;
+    border-radius: 50%;
+    font-size: 1rem;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.box-icon-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container-mobile {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Estilos para el menú hamburguesa */
+.container-mobile .link {
+    transition: transform 0.3s ease;
+}
+
+.container-mobile .link:hover {
+    transform: translateY(-3px);
+}
+
+.container-desktop {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.desktop-menu {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktop-menu a {
+    font-size: 1.2rem;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.container-logo {
+    width: 85px;
+    margin: auto 0;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+.link {
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Rubik", sans-serif;
+    transition: text-shadow 0.3s;
+}
+
+.link:visited {
+    color: black;
+    font-family: "Rubik", sans-serif;
+}
+
+/* ----------------- */
+.link {
+    text-decoration: none;
+    position: relative;
+    transition: border-bottom 0.2s ease;
+}
+
+.link::after,
+.active-link::after {
+    content: "";
+    position: absolute;
+    left: 42%;
+    bottom: -3px;
+    width: 15%;
+    height: 3px;
+    background-color: #2E4D60;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+.active-link::after,
+.link:hover::after {
+    transform: scaleX(1);
+}
+
+@media (min-width: 750px) {
+    .link::after,
+    .active-link::after {
+        width: 100%;
+        left: 0;
+    }
+    .desktop-menu a {
+        font-size: 1rem;
+    }
+    .container-logo {
+        width: 140px;
+    }
+
+    .link {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    .desktop-menu a {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: relative;
+    width: 30px;
+    height: 20px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: #2E4D60;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: grey;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 50px;
+    width: 50px;
+    background-color: #2E4D60;
+    border-radius: 50px;
+    padding: 13px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    /* background: #fff; */
+    filter: invert(1);
+}
+
+.bm-menu-wrap {
+    position: fixed;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: #f2f2f2;
+    padding: 8rem 1.5em 0;
+    font-size: 1.8em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #2E4D60;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    padding: 0 2rem;
+    text-align: center;
+}
+
+/* Individual item */
+.bm-item {
+    display: block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    /* background: #2E4D60; */
+    top: 0;
+    left: 0;
+}

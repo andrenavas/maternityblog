@@ -1,0 +1,27 @@
+.container-card-post{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.title-card-post{
+    font-size: 20px;
+}
+
+.subtitle-card-post{
+    font-size: 14px;
+}
+.img-post{
+    width: 350px;
+    height: auto;
+}
+
+@media (min-width: 700px) {
+   
+
+    .container-card-post {
+        padding: 18px 30px;
+    }
+}

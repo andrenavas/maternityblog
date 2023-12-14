@@ -1,0 +1,21 @@
+.title-blog{
+  text-align: center;
+}
+
+.container-post-home {
+  /* background-color: #f6f3f3; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-card-post-home {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap:20px;
+}
